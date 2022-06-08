@@ -1,0 +1,59 @@
+@import 'reset';
+
+#index {
+  background-color: #00539F;
+
+  div {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 1.25em 1.25em 1.25em;
+    border: 5px solid black;
+
+    h1 {
+      margin: 0;
+      padding: 1.25em 0;
+      color: #00539F;
+      text-shadow: 3px 3px 1px black;
+      font-size: 3.75rem;
+      text-align: center;
+    }
+    
+    h2, h3, h4, h5, h6 {
+      margin: 1em 0;
+    }
+
+    p, li {
+      line-height: 2;
+      letter-spacing: 1px;
+    }
+
+    ol, ul {
+      margin-left: 1em;
+    }
+
+    li {
+      margin-left: 2em;
+    }
+
+    .logo {
+      width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+
+    address {
+      box-shadow: 1px 1px 1px 1px white;
+
+      a {
+        color: red;
+      }
+    }  
+  }
+}
