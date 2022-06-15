@@ -264,4 +264,32 @@ button {
   color: red;
 }
 
+#css-bacon-fansite h1 {
+  color: #66bfbf;
+  font-size: 200px;
+}
+#css-bacon-fansite #heading:hover {
+  color: red;
+}
+#css-bacon-fansite img:hover {
+  background-color: gold;
+}
+#css-bacon-fansite .bacon {
+  background-color: green;
+}
+#css-bacon-fansite .broccoli {
+  background-color: red;
+}
+#css-bacon-fansite .circular {
+  border-radius: 50%;
+}
+#css-bacon-fansite footer {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+}
+#css-bacon-fansite footer a {
+  color: powderblue;
+}
+
 /*# sourceMappingURL=style.css.map */
