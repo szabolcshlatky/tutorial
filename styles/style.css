@@ -283,6 +283,29 @@ button {
 #css-bacon-fansite .circular {
   border-radius: 50%;
 }
+#css-bacon-fansite .box-200 {
+  width: 200px;
+  height: 200px;
+}
+#css-bacon-fansite .lightblue {
+  border: solid black 10px;
+  padding: 20px;
+  background-color: lightblue;
+}
+#css-bacon-fansite .darkred {
+  margin-left: 200px;
+  border: solid black 20px;
+  background-color: darkred;
+}
+#css-bacon-fansite .yellowgreen {
+  margin-left: 400px;
+  border: solid black 10px;
+  background-color: yellowgreen;
+}
+#css-bacon-fansite .box-100 {
+  width: 100px;
+  height: 100px;
+}
 #css-bacon-fansite footer {
   position: fixed;
   bottom: 1%;
@@ -290,6 +313,18 @@ button {
 }
 #css-bacon-fansite footer a {
   color: powderblue;
+}
+
+#css-mysite header {
+  background-color: #e4f9f5;
+}
+#css-mysite header h1 {
+  margin-top: 0;
+}
+#css-mysite footer {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */

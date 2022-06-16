@@ -85,6 +85,34 @@
     border-radius: 50%;
   }
 
+  .box-200 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .lightblue {
+    border: solid black 10px;
+    padding: 20px;
+    background-color: lightblue;
+  }
+
+  .darkred {
+    margin-left: 200px; // 260px with content-box sizing
+    border: solid black 20px;
+    background-color: darkred;
+  }
+
+  .yellowgreen {
+    margin-left: 400px; // 500px with content-box sizing
+    border: solid black 10px;
+    background-color: yellowgreen;
+  }
+
+  .box-100 {
+    width: 100px;
+    height: 100px;
+  }
+
   footer {
     position: fixed;
     bottom: 1%;
@@ -93,5 +121,22 @@
     a {
       color: powderblue;
     }
+  }
+}
+
+#css-mysite {
+
+  header {
+    background-color: #e4f9f5;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
   }
 }
