@@ -109,8 +109,53 @@
   }
 
   .box-100 {
+    display: inline-block;
+    position: relative;
     width: 100px;
     height: 100px;
+  }
+
+  .red {
+    left: 200px;
+    background-color: red;
+  }
+
+  .blue {
+    right: 100px;
+    background-color: blue;
+  }
+
+  .yellow {
+    right: 100px;
+    background-color: yellow;
+  }
+
+  .absolute-box-100 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+
+  .absolute-position {
+    position: relative;
+
+    .pink {
+      top: 400px;
+      left: 200px;
+      background-color: pink;
+    }
+  
+    .purple {
+      top: 300px;
+      left: 100px;
+      background-color: purple;
+    }
+  
+    .orange {
+      top: 200px;
+      left: 0px;
+      background-color: orange;
+    }
   }
 
   footer {
