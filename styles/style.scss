@@ -140,19 +140,18 @@
     position: relative;
 
     .pink {
-      top: 400px;
+      top: 200px;
       left: 200px;
       background-color: pink;
     }
   
     .purple {
-      top: 300px;
+      top: 100px;
       left: 100px;
       background-color: purple;
     }
   
     .orange {
-      top: 200px;
       left: 0px;
       background-color: orange;
     }
@@ -171,17 +170,55 @@
 
 #css-mysite {
 
-  header {
-    background-color: #e4f9f5;
+/* COLORS from light to dark
+  #e4f9f5 | rgb(228, 249, 245)
+  #30e3ca | rgb(48, 227, 202)
+  #11999e | rgb(17, 153, 158)
+  #40514e | rgb(64, 81, 78)
 
-    h1 {
-      margin-top: 0;
+FONT
+
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Sacramento', cursive;
+*/
+
+  body {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+
+
+    header {
+      position: relative;
+      padding-top: 100px;
+      background-color: #e4f9f5;
+  
+      h1 {
+        margin-top: 0;
+        font-family: 'Sacramento', cursive;
+      }
+
+      .cloud__top {
+        position: absolute;
+        top: 50px;
+        right: 300px;
+      }
+
+      .cloud__bottom {
+        position: absolute;
+        bottom: 300px;
+        left: 300px;
+      }
     }
-  }
 
-  footer {
-    position: fixed;
-    bottom: 1%;
-    right: 1%;
+    h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    footer {
+      position: fixed;
+      bottom: 1%;
+      right: 1%;
+    }
   }
 }
