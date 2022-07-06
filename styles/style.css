@@ -320,10 +320,29 @@ button {
   right: 100px;
   background-color: yellow;
 }
+#css-bacon-fansite .gold {
+  right: 40px;
+  bottom: 40px;
+  background-color: gold;
+  z-index: 2;
+}
+#css-bacon-fansite .silver {
+  background-color: silver;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+}
+#css-bacon-fansite .bronze {
+  background-color: goldenrod;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
 #css-bacon-fansite .absolute-box-100 {
   position: absolute;
   width: 100px;
   height: 100px;
+  border: 1px solid black;
 }
 #css-bacon-fansite .absolute-position {
   position: relative;
@@ -351,21 +370,8 @@ button {
   color: powderblue;
 }
 
-#css-mysite {
-  /* COLORS from light to dark
-    #e4f9f5 | rgb(228, 249, 245)
-    #30e3ca | rgb(48, 227, 202)
-    #11999e | rgb(17, 153, 158)
-    #40514e | rgb(64, 81, 78)
-
-  FONT
-
-    font-family: 'Merriweather', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Sacramento', cursive;
-  */
-}
 #css-mysite body {
+  color: #40514e;
   text-align: center;
   font-family: "Merriweather", serif;
 }
@@ -382,18 +388,23 @@ button {
 }
 #css-mysite body header .cloud__top {
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: 300px;
 }
 #css-mysite body header .cloud__bottom {
   position: absolute;
   bottom: 300px;
-  left: 300px;
+  left: 250px;
+}
+#css-mysite body .intro {
+  width: 30%;
+  margin: auto;
 }
 #css-mysite body h2, #css-mysite body h3 {
   font-family: "Montserrat", sans-serif;
 }
 #css-mysite body h2 {
+  padding-bottom: 10px;
   font-size: 2.5rem;
   font-weight: normal;
 }
@@ -402,6 +413,14 @@ button {
 }
 #css-mysite body h3, #css-mysite body a {
   color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+#css-mysite body a {
+  margin: 10px 20px;
+  text-decoration: none;
+}
+#css-mysite body a:hover {
+  color: #eaf6f6;
 }
 #css-mysite body p {
   line-height: 2;
@@ -411,6 +430,9 @@ button {
   margin: 100px auto;
   border: 6px dotted #eaf6f6;
   border-bottom: none;
+}
+#css-mysite body main {
+  margin: 100px 0;
 }
 #css-mysite body main .skill-left {
   text-align: left;
@@ -471,6 +493,151 @@ button {
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
+}
+#css-mysite body footer {
+  padding: 50px 0 20px;
+  background-color: #66bfbf;
+}
+#css-mysite body footer .copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+#bootstrap-tindog body {
+  font-family: "Montserrat", sans-serif;
+  /* Download Buttons */
+  /* Features Section */
+  /* Testimonial Section */
+  /* Pricing Section */
+  /* CTA Section */
+  /* Footer Section */
+}
+#bootstrap-tindog body h2 {
+  font: normal bold 3rem/1.5 "Montserrat", sans-serif;
+}
+#bootstrap-tindog body h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+#bootstrap-tindog body p {
+  color: #8f8f8f;
+}
+#bootstrap-tindog body a {
+  text-decoration: none;
+}
+#bootstrap-tindog body .download-button {
+  margin: 5% 3% 5% 0;
+}
+#bootstrap-tindog body #title {
+  background-color: #ff4c68;
+  color: #fff;
+  /* Navigation Bar */
+}
+@media (max-width: 1028px) {
+  #bootstrap-tindog body #title {
+    text-align: center;
+  }
+}
+#bootstrap-tindog body #title .navbar {
+  padding: 0 0 4.5rem;
+}
+#bootstrap-tindog body #title .navbar .navbar-brand {
+  font: normal bold 2.5rem "Ubuntu", sans-serif;
+}
+#bootstrap-tindog body #title .navbar .nav-item {
+  padding: 0 18px;
+}
+#bootstrap-tindog body #title .navbar .nav-item .nav-link {
+  font: normal 300 1.2rem "Montserrat", sans-serif;
+}
+#bootstrap-tindog body #title .container-fluid {
+  padding: 3% 15% 7%;
+  /* Title Image */
+}
+#bootstrap-tindog body #title .container-fluid h1 {
+  font: normal 900 3rem/1.5 "Montserrat", sans-serif;
+}
+#bootstrap-tindog body #title .container-fluid figure {
+  width: 60%;
+  margin: 0 auto;
+}
+#bootstrap-tindog body #title .container-fluid figure .title-image {
+  transform: rotate(25deg);
+  position: absolute;
+  left: 60%;
+  bottom: -40%;
+  overflow: hidden;
+}
+@media (max-width: 1028px) {
+  #bootstrap-tindog body #title .container-fluid figure .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+#bootstrap-tindog body #features {
+  position: relative;
+  padding: 7% 15%;
+  background-color: #fff;
+  z-index: 1;
+}
+#bootstrap-tindog body #features .feature-box {
+  padding: 5%;
+  text-align: center;
+}
+#bootstrap-tindog body #features .feature-box .icon {
+  margin-bottom: 1rem;
+  color: #ef8172;
+}
+#bootstrap-tindog body #features .feature-box .icon:hover {
+  color: #ff4c68;
+}
+#bootstrap-tindog body #testimonials {
+  background-color: #ef8172;
+  color: #fff;
+  text-align: center;
+}
+#bootstrap-tindog body #testimonials .carousel-item {
+  padding: 7% 15%;
+}
+#bootstrap-tindog body #testimonials .testimonial-image {
+  width: 10%;
+  margin: 20px;
+  border-radius: 100%;
+}
+#bootstrap-tindog body #press {
+  padding-bottom: 3%;
+  background-color: #ef8172;
+  text-align: center;
+}
+#bootstrap-tindog body #press .press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+#bootstrap-tindog body #pricing {
+  padding: 100px;
+  background-color: #fff;
+  text-align: center;
+}
+#bootstrap-tindog body #pricing .pricing-column {
+  padding: 3% 2%;
+}
+#bootstrap-tindog body #cta {
+  padding: 7% 15%;
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+}
+#bootstrap-tindog body #cta .cta-heading {
+  font: normal 900 3.5rem/1.5 "Montserrat", sans-serif;
+}
+#bootstrap-tindog body #footer {
+  padding: 7% 15%;
+  background-color: #fff;
+  text-align: center;
+}
+#bootstrap-tindog body #footer .social-icon {
+  margin: 20px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

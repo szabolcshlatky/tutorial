@@ -130,10 +130,32 @@
     background-color: yellow;
   }
 
+  .gold {
+    right: 40px;
+    bottom: 40px;
+    background-color: gold;
+    z-index: 2;
+  }
+
+  .silver {
+    background-color: silver;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+  }
+
+  .bronze {
+    background-color: goldenrod;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+  }
+
   .absolute-box-100 {
     position: absolute;
     width: 100px;
     height: 100px;
+    border: 1px solid black;
   }
 
   .absolute-position {
@@ -170,20 +192,8 @@
 
 #css-mysite {
 
-/* COLORS from light to dark
-  #e4f9f5 | rgb(228, 249, 245)
-  #30e3ca | rgb(48, 227, 202)
-  #11999e | rgb(17, 153, 158)
-  #40514e | rgb(64, 81, 78)
-
-FONT
-
-  font-family: 'Merriweather', serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Sacramento', cursive;
-*/
-
   body {
+    color: #40514e;
     text-align: center;
     font-family: 'Merriweather', serif;
 
@@ -202,15 +212,20 @@ FONT
 
       .cloud__top {
         position: absolute;
-        top: 50px;
+        top: 40px;
         right: 300px;
       }
 
       .cloud__bottom {
         position: absolute;
         bottom: 300px;
-        left: 300px;
+        left: 250px;
       }
+    }
+
+    .intro {
+      width: 30%;
+      margin: auto;
     }
 
     h2, h3 {
@@ -218,6 +233,7 @@ FONT
     }
   
     h2 {
+      padding-bottom: 10px;
       font-size: 2.5rem;
       font-weight: normal;
     }
@@ -228,6 +244,16 @@ FONT
 
     h3, a {
       color: #11999e;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+      margin: 10px 20px;
+      text-decoration: none;
+
+      &:hover {
+        color: #eaf6f6;
+      }
     }
 
     p {
@@ -242,6 +268,8 @@ FONT
     }
 
   main {
+    margin: 100px 0;
+
     .skill-left {
       text-align: left;
     }
@@ -315,5 +343,194 @@ FONT
     }
   }
 
+  footer {
+    padding: 50px 0 20px;
+    background-color: #66bfbf;
+
+    .copyright {
+      color: #eaf6f6;
+      font-size: 0.75rem;
+      padding: 20px 0;
+    }
+  }
+
+  }
+}
+
+#bootstrap-tindog {
+
+  @mixin tindog-max1028px {
+    @media (max-width: 1028px) { @content; }
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+
+    h2 {
+      font: normal bold 3rem/1.5 'Montserrat', sans-serif;
+    }
+
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    p {
+      color: #8f8f8f;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  
+    /* Download Buttons */
+
+    .download-button {
+      margin: 5% 3% 5% 0;
+    }
+
+    #title {
+      background-color: #ff4c68;
+      color: #fff;
+
+      @include tindog-max1028px {
+        text-align: center;
+      }
+
+      /* Navigation Bar */
+
+      .navbar {
+        padding: 0 0 4.5rem;
+
+        .navbar-brand {
+          font: normal bold 2.5rem 'Ubuntu', sans-serif;
+        }
+
+        .nav-item {
+          padding: 0 18px;
+
+          .nav-link {
+            font: normal 300 1.2rem 'Montserrat', sans-serif;
+          }
+        }
+      }
+
+      .container-fluid {
+        padding: 3% 15% 7%;
+  
+        h1 {
+          font: normal 900 3rem/1.5 'Montserrat', sans-serif;
+        }
+
+        /* Title Image */
+
+        figure {
+          width: 60%;
+          margin: 0 auto;
+
+          .title-image {
+            transform: rotate(25deg);
+            position: absolute;
+            left: 60%;
+            bottom: -40%;
+            overflow: hidden;
+  
+            @include tindog-max1028px {
+              position: static;
+              transform: rotate(0);
+            }
+          }
+        }
+      }
+    }
+
+    /* Features Section */
+
+    #features {
+      position: relative;
+      padding: 7% 15%;
+      background-color: #fff;
+      z-index: 1;
+
+      .feature-box {
+        padding: 5%;
+        text-align: center;
+
+        .icon {
+          margin-bottom: 1rem;
+          color: #ef8172;
+
+          &:hover {
+            color: #ff4c68;
+          }
+        }
+      }
+    }
+
+    /* Testimonial Section */
+
+    #testimonials {
+      background-color: #ef8172;
+      color: #fff;
+      text-align: center;
+
+      .carousel-item {
+        padding: 7% 15%;
+      }
+
+      .testimonial-image {
+        width: 10%;
+        margin: 20px;
+        border-radius: 100%;
+      }
+    }
+
+    #press {
+      padding-bottom: 3%;
+      background-color: #ef8172;
+      text-align: center;
+
+      .press-logo {
+        width: 15%;
+        margin: 20px 20px 50px;
+      }
+    }
+
+    /* Pricing Section */
+
+    #pricing {
+      padding: 100px;
+      background-color: #fff;
+      text-align: center;
+
+      .pricing-column {
+        padding: 3% 2%;
+      }
+    }
+
+    /* CTA Section */
+
+    #cta {
+      padding: 7% 15%;
+      background-color: #ff4c68;
+      color: #fff;
+      text-align: center;
+
+      .cta-heading {
+        font: normal 900 3.5rem/1.5 'Montserrat', sans-serif;
+      }
+    }
+
+    /* Footer Section */
+
+    #footer {
+      padding: 7% 15%;
+      background-color: #fff;
+      text-align: center;
+
+      .social-icon {
+        margin: 20px 10px;
+      }
+    }
   }
 }
