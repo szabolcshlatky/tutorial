@@ -640,4 +640,15 @@ button {
   margin: 20px 10px;
 }
 
+#js-sandbox .btn:active {
+  color: red;
+}
+#js-sandbox .invisible {
+  visibility: hidden;
+}
+#js-sandbox .huge {
+  font-size: 10rem;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
