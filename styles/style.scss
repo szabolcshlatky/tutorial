@@ -535,22 +535,6 @@
   }
 }
 
-#js-sandbox {
-
-  .btn:active {
-    color: red;
-  }
-
-  .invisible {
-    visibility: hidden;
-  }
-
-  .huge {
-    font-size: 10rem;
-    font-weight: bold;
-  }
-}
-
 #js-dice-game {
   background-color: #393E46;
 
@@ -689,6 +673,28 @@
       color: #dbedf3;
       font-family: sans-serif;
     }
+  }
+}
+
+#jquery-dom {
+
+  .btn:active {
+    color: red;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .huge {
+    color: yellow;
+    font-family: cursive;
+    font-size: 10rem;
+    font-weight: bold;
+  }
+
+  .margin-50 {
+    margin: 50px;
   }
 }
 
