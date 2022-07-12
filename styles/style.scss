@@ -550,3 +550,198 @@
     font-weight: bold;
   }
 }
+
+#js-dice-game {
+  background-color: #393E46;
+
+  .container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+    header {
+      margin: 5em;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      .logo {
+        width: 5em;
+      }
+    }
+
+    h1 {
+      margin: 30px;
+      font-family: 'Lobster', cursive;
+      text-shadow: 5px 0 #232931;
+      font-size: 8rem;
+      color: #4ECCA3;
+    }
+
+    .dice {
+      text-align: center;
+      display: inline-block;
+    }
+
+    figcaption {
+      font-size: 2rem;
+      color: #4ECCA3;
+      font-family: 'Indie Flower', cursive;
+    }
+    
+    img {
+      width: 80%;
+    }
+  }
+}
+
+#js-drum-kit {
+  text-align: center;
+  background-color: #283149;
+
+  h1 {
+    color: #dbedf3;
+    font-family: "Arvo", cursive;
+    font-size: 4rem;
+    text-shadow: 3px 0 #da0463;
+  }
+
+  .set {
+    margin: 10% auto;
+
+    .drum {
+      outline: none;
+      border: 10px solid #404B69;
+      font-size: 5rem;
+      font-family: 'Arvo', cursive;
+      line-height: 2;
+      font-weight: 900;
+      color: #DA0463;
+      text-shadow: 3px 0 #DBEDF3;
+      border-radius: 15px;
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      margin: 10px;
+    }
+    
+    .w {
+      background: #fff url('../images/tom1.png') no-repeat center;
+      background-size: contain;
+    }
+    
+    .a {
+      background: #fff url('../images/tom2.png') no-repeat center;
+      background-size: contain;
+    }
+    
+    .s {
+      background: #fff url('../images/tom3.png') no-repeat center;
+      background-size: contain;
+    }
+    
+    .d {
+      background: #fff url('../images/tom4.png') no-repeat center;
+      background-size: contain;
+    }
+    
+    .j {
+      background: #fff url('../images/snare.png') no-repeat center;
+      background-size: contain;
+    }
+    
+    .k {
+      background: #fff url('../images/crash.png') no-repeat center;
+      background-size: contain;
+    }
+    
+    .l {
+      background: #fff url('../images/kick.png') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .pressed {
+    box-shadow: 0 3px 4px 0 #dbedf3;
+    opacity: 0.5;
+  }
+  
+  .red {
+    color: red;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    margin-top: 5%;
+    text-align: center;
+
+    a {
+      color: #dbedf3;
+      font-family: sans-serif;
+    }
+  }
+}
+
+#jquery-simon-game {
+  text-align: center;
+  background-color: #011F3F;
+
+  #level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin:  5%;
+    color: #FEF2BF;
+  }
+
+  .container {
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+  }
+  
+  .btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+  
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+}

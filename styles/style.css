@@ -651,4 +651,167 @@ button {
   font-weight: bold;
 }
 
+#js-dice-game {
+  background-color: #393E46;
+}
+#js-dice-game .container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+#js-dice-game .container header {
+  margin: 5em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#js-dice-game .container header .logo {
+  width: 5em;
+}
+#js-dice-game .container h1 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+#js-dice-game .container .dice {
+  text-align: center;
+  display: inline-block;
+}
+#js-dice-game .container figcaption {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: "Indie Flower", cursive;
+}
+#js-dice-game .container img {
+  width: 80%;
+}
+
+#js-drum-kit {
+  text-align: center;
+  background-color: #283149;
+}
+#js-drum-kit h1 {
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  font-size: 4rem;
+  text-shadow: 3px 0 #da0463;
+}
+#js-drum-kit .set {
+  margin: 10% auto;
+}
+#js-drum-kit .set .drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: "Arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+}
+#js-drum-kit .set .w {
+  background: #fff url("../images/tom1.png") no-repeat center;
+  background-size: contain;
+}
+#js-drum-kit .set .a {
+  background: #fff url("../images/tom2.png") no-repeat center;
+  background-size: contain;
+}
+#js-drum-kit .set .s {
+  background: #fff url("../images/tom3.png") no-repeat center;
+  background-size: contain;
+}
+#js-drum-kit .set .d {
+  background: #fff url("../images/tom4.png") no-repeat center;
+  background-size: contain;
+}
+#js-drum-kit .set .j {
+  background: #fff url("../images/snare.png") no-repeat center;
+  background-size: contain;
+}
+#js-drum-kit .set .k {
+  background: #fff url("../images/crash.png") no-repeat center;
+  background-size: contain;
+}
+#js-drum-kit .set .l {
+  background: #fff url("../images/kick.png") no-repeat center;
+  background-size: contain;
+}
+#js-drum-kit .game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+#js-drum-kit .pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+#js-drum-kit .red {
+  color: red;
+}
+#js-drum-kit footer {
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+  margin-top: 5%;
+  text-align: center;
+}
+#js-drum-kit footer a {
+  color: #dbedf3;
+  font-family: sans-serif;
+}
+
+#jquery-simon-game {
+  text-align: center;
+  background-color: #011F3F;
+}
+#jquery-simon-game #level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+#jquery-simon-game .container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+#jquery-simon-game .btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+#jquery-simon-game .game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+#jquery-simon-game .red {
+  background-color: red;
+}
+#jquery-simon-game .green {
+  background-color: green;
+}
+#jquery-simon-game .blue {
+  background-color: blue;
+}
+#jquery-simon-game .yellow {
+  background-color: yellow;
+}
+#jquery-simon-game .pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
 /*# sourceMappingURL=style.css.map */
