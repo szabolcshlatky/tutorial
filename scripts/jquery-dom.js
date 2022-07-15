@@ -102,7 +102,7 @@ $(`a`).removeClass(`huge`);
 
 $(`h3`).html(`<em>Bye</em>`);
 
-$(`button`).text(`Hello`);
+$(`a`).text(`LINK`);
 
 /* Attributes */
 
@@ -142,40 +142,56 @@ $(`hr`).remove();
 
 /* Animations */
 
-
-/* Built in animations examples:
-
-  hide
-  show
-  toggle
-
-  fadeOut
-  fadeIn
-  fadeToggle
-
-  slideUp
-  slideDown
-  slideToggle
-*/
-
-$(`button`).on(`click`, function() {
-  $(`p`).toggle();
+$(`.hide`).on(`click`, function() {
+  $(`img`).hide();
 });
 
-$(`button`).on(`click`, function() {
-  $(`p`).animate({
+$(`.show`).on(`click`, function() {
+  $(`img`).show();
+});
+
+$(`.toggle`).on(`click`, function() {
+  $(`img`).toggle();
+});
+
+$(`.fadeOut`).on(`click`, function() {
+  $(`img`).fadeOut();
+});
+
+$(`.fadeIn`).on(`click`, function() {
+  $(`img`).fadeIn();
+});
+
+$(`.fadeToggle`).on(`click`, function() {
+  $(`img`).fadeToggle();
+});
+
+$(`.slideUp`).on(`click`, function() {
+  $(`img`).slideUp();
+});
+
+$(`.slideDown`).on(`click`, function() {
+  $(`img`).slideDown();
+});
+
+$(`.slideToggle`).on(`click`, function() {
+  $(`img`).slideToggle();
+});
+
+$(`.animate-opacity`).on(`click`, function() {
+  $(`img`).animate({
     opacity: 0.5
   });
 });
 
-$(`button`).on(`click`, function() {
-  $(`p`).animate({
+$(`.animate-margin`).on(`click`, function() {
+  $(`img`).animate({
     margin: `20%`
   });
 });
 
-$(`button`).on(`click`, function() {
-  $(`h3`).slideUp().slideDown().animate({
+$(`.animate-css`).on(`click`, function() {
+  $(`img`).slideUp().slideDown().animate({
     opacity: 0.5
   });
 });

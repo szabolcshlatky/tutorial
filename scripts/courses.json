@@ -1,0 +1,5 @@
+[
+  {"course": "Modern JavaScript", "challenge": "Coding Sans", "important": true},
+  {"course": "Full-Stack (SQL etc.)", "challenge": "GitHub portfolio", "important": false},
+  {"course": "MyFirstApp", "challenge": "Gallery", "important": false}
+]

@@ -751,3 +751,163 @@
     background-color: grey;
   }
 }
+
+#es6-sandbox {
+  .classified,
+  .classified_3 {
+    padding: 10px;
+    color: crimson;
+    border: 1px dotted crimson;
+  }
+
+  .classified_2,
+  .classified_4 {
+    padding: 10px;
+    color: limegreen;
+    border: 1px dotted limegreen;
+  }
+
+  .click__todo li {
+    list-style-type: none;
+    max-width: 200px;
+    margin: 8px auto;
+    border: 1px dotted #ddd;
+    padding: 8px;
+    background-color: #eee;
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #ccc;
+    text-align: center;
+  }
+
+  .signup-form {
+    max-width: 200px;
+    margin: 40px auto;
+    padding: 10px;
+    background: linear-gradient(45deg, #eee, #fff);
+
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 4px;
+    }
+
+    input {
+        display: block;
+        margin: 10px auto;
+        padding: 4px;
+      }
+  
+      .success {
+        border: 2px solid limegreen;
+      }
+  
+      .error {
+        border: 2px solid crimson;
+      }
+    }
+}
+
+#es6-todo-list {
+
+  body {
+    background: #352f5b;
+
+    .container {
+      width: 50%;
+    }
+  
+    input[type=text],
+    input[type=text]:focus {
+      color: #fff;
+      border: none;
+      background: rgba(0,0,0,0.2);
+      width: 100%;
+    }
+  
+    .todos li {
+      background: #423a6f;
+      margin: .5em;
+      color: #fff;
+    }
+  
+    .delete {
+      cursor: pointer;
+    }
+  
+    .filtered {
+      display: none !important;
+    }
+  }
+}
+
+#es6-pop-up {
+  .popup-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .popup {
+      position: relative;
+      width: min(100%, 300px);
+      margin: 10% auto;
+      padding: 20px;
+      background-color: #fff;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+
+      .popup-close {
+        position: absolute;
+        top: 5px;
+        right: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .popup-btn {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    background: crimson;
+    border: none;
+    padding: 6px 10px;
+    text-decoration: none;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+  }
+}
+
+#es6-digital-clock {
+
+  body {
+    background: #333;
+  
+    .clock {
+      margin: 200px auto;
+      color: yellow;
+      font-family: 'Tourney', cursive;
+      font-weight: bolder;
+      font-size: 4em;
+      text-align: center;
+  
+      span {
+        padding: 20px;
+        background: #444;
+      }
+    }
+  }
+}
